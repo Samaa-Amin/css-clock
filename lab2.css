@@ -1,0 +1,119 @@
+body{
+    background-image: url("https://image.freepik.com/free-vector/halftone-white-background_115579-724.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.clock {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border: 20px solid #404761;
+    border-radius: 50%;
+    top: 22%;
+    left: 35%;
+    margin: 0 auto;
+    background-color: #ddd;
+    box-shadow: 10px 0px 50px rgba(0, 0, 0, 0.8);
+}
+.hour {
+    position: absolute;
+    left: 50%;
+    width: 40%;
+    top:50%;
+    height: 6px;
+    border-radius: 3px;
+    content: "";
+    background-color: black;
+    animation: animate 3600s infinite linear;
+    transform-origin:left ;
+
+}
+
+.minute {
+    position: absolute;
+    left: 50%;
+    width: 30%;
+    top:50%;
+    height: 6px;
+    border-radius: 3px;
+    content: "";
+    background-color: black;
+    animation: animate 216000s infinite linear;
+    transform-origin:left ;
+}
+.second {
+    position: absolute;
+    left: 50%;
+    width: 40%;
+    top:50%;
+    height: 2px;
+    border-radius: 3px;
+    content: "";
+    background-color: red;
+    animation: animate 60s infinite linear;
+    transform-origin:left ;
+}
+
+@keyframes animate {
+    0%
+    {
+        transform: rotate(-90deg);
+    }
+    100% 
+    {
+        transform: rotate(360deg);
+    }
+}
+
+.top{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 20px;
+    width: 4px;
+    background-color: black;
+}
+.bottom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    height: 20px;
+    width: 4px;
+    background-color: black;
+}
+.right{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto 0;
+    height: 4px;
+    width: 20px;
+    background-color: black;
+}
+.left {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto 0;
+    height: 4px;
+    width: 20px;
+    background-color: black;
+}
+.center {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: black;
+}
+
